@@ -7,7 +7,6 @@ function App() {
 		<>
 			<UseContext>
 				<Navbar />
-				<Io />
 			</UseContext>
 		</>
 	);
