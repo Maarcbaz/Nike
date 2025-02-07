@@ -5,7 +5,7 @@ import { ShoeCard, Button } from '../../components';
 import { bigShoe1 } from '../../../public/assets/images';
 import { arrowRight } from '../../../public/assets/icons';
 
-const Hero = () => {
+const Home = () => {
 	const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
 	return (
@@ -69,4 +69,4 @@ const Hero = () => {
 	);
 };
 
-export default Hero;
+export default Home;

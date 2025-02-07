@@ -1,12 +1,14 @@
 import { Navbar } from './components';
 import UseContext from './context/UseContext';
-import Home from './pages/Home/Home';
+import { PopularProducts, Home } from './pages';
 function App() {
 	return (
 		<>
 			<UseContext>
 				<Navbar />
 				<Home />
+				<PopularProducts />
+				
 			</UseContext>
 		</>
 	);
