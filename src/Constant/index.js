@@ -67,3 +67,11 @@ export const products = [
         rating: 4.6
     },
 ]
+
+export const SuperQualities = [
+    {
+        paragraph1: "Ensuring premium comfort and style, our meticulously crafted footwear is designed to elevate your experience, providing you with unmatched quality, innovation, and a touch of elegance.",
+        paragraph2: "Our dedication to detail and excellence ensures your satisfaction",
+        
+    }
+]

@@ -8,7 +8,7 @@ const Button = ({ text, px, py, img }) => {
 				<p>{text}</p>
 				{img && (
 					<div>
-						<img src={img} alt="" />
+						<img className='w-5 h-5'  src={img} alt="" />
 					</div>
 				)}
 			</button>

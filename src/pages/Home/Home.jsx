@@ -29,7 +29,7 @@ const Home = () => {
 					your active life.
 				</p>
 
-				<Button label="Shop now" iconURL={arrowRight} />
+				<Button text={'Shop Now'} px={'px-7'} py={'py-4'} img={arrowRight} />
 
 				<div className="flex justify-start items-start max-md:flex-wrap w-full mt-20 gap-10">
 					{statistics.map((stat, index) => (
