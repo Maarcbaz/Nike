@@ -1,6 +1,14 @@
-import { Navbar } from './components';
+import { Footer, Navbar } from './components';
 import UseContext from './context/UseContext';
-import { PopularProducts, Home, SuperQuality } from './pages';
+import {
+	PopularProducts,
+	Home,
+	SuperQuality,
+	Services,
+	SpecialOffer,
+	Review,
+	Subscribe,
+} from './pages';
 function App() {
 	return (
 		<>
@@ -9,6 +17,11 @@ function App() {
 				<Home />
 				<PopularProducts />
 				<SuperQuality />
+				<Services />
+				<SpecialOffer />
+				<Review />
+				<Subscribe />
+				<Footer />
 			</UseContext>
 		</>
 	);
