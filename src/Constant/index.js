@@ -10,9 +10,9 @@ export const navLinks = [
 ];
 
 export const statistics = [
-    { value: '1k+', label: 'Brands' },
-    { value: '500+', label: 'Shops' },
-    { value: '250k+', label: 'Customers' },
+    { value: 50, label: 'Brands' },
+    { value: 500, label: 'Shops' },
+    { value: 250, label: 'Customers' },
 ];
 
 export const HomeText = [

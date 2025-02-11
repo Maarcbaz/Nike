@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 
 import { shoesImg, statistics } from '../../Constant';
 import { ShoeCard, Button } from '../../components';
@@ -7,7 +9,10 @@ import { arrowRight } from '../../../public/assets/icons';
 
 const Home = () => {
 	const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
-
+	const [ref, inView] = useInView({
+		triggerOnce: false, // Trigger only once when it comes into view
+		threshold: 1, // Start the animation when 80% of the element is visible
+	});
 	return (
 		<section
 			id="home"
@@ -31,10 +36,20 @@ const Home = () => {
 
 				<Button text={'Shop Now'} px={'px-7'} py={'py-4'} img={arrowRight} />
 
-				<div className="flex justify-start items-start max-md:flex-wrap w-full mt-20 gap-10">
+				<div className="flex justify-start items-start max-md:flex-wrap max-sm:flex-col w-full mt-20 gap-10">
 					{statistics.map((stat, index) => (
 						<div key={index}>
-							<p className="text-4xl font-palanquin font-bold">{stat.value}</p>
+							<div className="text-4xl font-palanquin font-bold" ref={ref}>
+								{inView && (
+									<CountUp
+										start={0}
+										end={`${stat.value}`} // Final value
+										duration={2} // Animation duration in seconds
+										separator="" // Add comma separators
+									/>
+								)}
+								<span>k+</span>
+							</div>
 							<p className="leading-7 font-montserrat text-slate-gray">
 								{stat.label}
 							</p>
