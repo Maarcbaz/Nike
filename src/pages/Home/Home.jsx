@@ -5,7 +5,7 @@ import { ShoeCard, Button } from '../../components';
 import { bigShoe1 } from '../../../public/assets/images';
 import { arrowRight } from '../../../public/assets/icons';
 
-const Hero = () => {
+const Home = () => {
 	const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
 	return (
@@ -29,7 +29,7 @@ const Hero = () => {
 					your active life.
 				</p>
 
-				<Button label="Shop now" iconURL={arrowRight} />
+				<Button text={'Shop Now'} px={'px-7'} py={'py-4'} img={arrowRight} />
 
 				<div className="flex justify-start items-start max-md:flex-wrap w-full mt-20 gap-10">
 					{statistics.map((stat, index) => (
@@ -69,4 +69,4 @@ const Hero = () => {
 	);
 };
 
-export default Hero;
+export default Home;

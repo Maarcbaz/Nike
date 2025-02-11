@@ -1,12 +1,27 @@
-import { Navbar } from './components';
+import { Footer, Navbar } from './components';
 import UseContext from './context/UseContext';
-import Home from './pages/Home/Home';
+import {
+	PopularProducts,
+	Home,
+	SuperQuality,
+	Services,
+	SpecialOffer,
+	Review,
+	Subscribe,
+} from './pages';
 function App() {
 	return (
 		<>
 			<UseContext>
 				<Navbar />
 				<Home />
+				<PopularProducts />
+				<SuperQuality />
+				<Services />
+				<SpecialOffer />
+				<Review />
+				<Subscribe />
+				<Footer />
 			</UseContext>
 		</>
 	);
