@@ -1,6 +1,7 @@
 import React from 'react';
 import { PopularShoes } from '../../components';
-import { products } from '../../Constant';
+import { products, Settings } from '../../Constant';
+import Slider from 'react-slick';
 const PopularProducts = () => {
 	return (
 		<section id="products" className="mt-32 padding-x">
@@ -13,11 +14,11 @@ const PopularProducts = () => {
 					selections. Discover a world of comfort, design, and value
 				</p>
 			</div>
-			<div className="flex max-xl:flex-wrap items-center gap-10 mt-16">
+			<Slider {...Settings}>
 				{products.map((product, index) => (
 					<PopularShoes product={product} key={index} />
 				))}
-			</div>
+			</Slider>
 		</section>
 	);
 };

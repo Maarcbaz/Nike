@@ -1,5 +1,7 @@
 import { Footer, Navbar } from './components';
 import UseContext from './context/UseContext';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import {
 	PopularProducts,
 	Home,

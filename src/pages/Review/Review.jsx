@@ -1,5 +1,8 @@
 import React from 'react';
-import { reviews } from '../../Constant';
+import { reviews, Settings } from '../../Constant';
+// import { ReviewCard } from '../../components';
+import Slider from 'react-slick';
+import { ReviewCard } from '../../components';
 
 export const Review = () => {
 	return (
@@ -14,39 +17,11 @@ export const Review = () => {
 						exceptional experiences with us.
 					</p>
 				</div>
-				<div className="flex justify-evenly max-md:flex-col mt-24">
+				<Slider {...Settings}>
 					{reviews.map((review, index) => (
-						<div key={index} className="flex items-center flex-col">
-							<div>
-								<img
-									className="rounded-full object-cover w-[120px] h-[120px]"
-									src={review.imgURL}
-									alt={review.imgURL}
-								/>
-							</div>
-							<div className="mt-8">
-								<p className="text-slate-gray max-w-sm text-center">
-									{review.feedback}
-								</p>
-								<div className="mt-3 flex justify-center items-center gap-2.5">
-									<img
-										src={review.Rstart}
-										width="24"
-										height="24"
-										alt="rating star"
-										className="object-contain m-0"
-									/>
-									<p className="text-xl font-montserrat text-slate-gray">
-										({review.rating})
-									</p>
-								</div>
-								<h3 class="mt-1 text-3xl text-center font-bold">
-									{review.customerName}
-								</h3>
-							</div>
-						</div>
+						<ReviewCard review={review} key={index} />
 					))}
-				</div>
+				</Slider>
 			</section>
 		</section>
 	);

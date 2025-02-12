@@ -11,7 +11,7 @@ const Home = () => {
 	const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 	const [ref, inView] = useInView({
 		triggerOnce: false, // Trigger only once when it comes into view
-		threshold: 1, // Start the animation when 80% of the element is visible
+		threshold: 0.5, // Start the animation when 50% of the element is visible
 	});
 	return (
 		<section
