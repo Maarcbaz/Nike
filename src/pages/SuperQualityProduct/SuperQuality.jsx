@@ -8,11 +8,17 @@ const SuperQuality = () => {
 			<div>
 				{SuperQualities.map((sp, index) => (
 					<div key={index}>
-						<h1 className="lg:max-w-lg capitalize font-bold text-4xl">
+						<h1
+							data-aos="fade-up"
+							data-aos-duration="1400"
+							className="lg:max-w-lg capitalize font-bold text-4xl">
 							we provide you
 							<span className="text-coral-red"> super quality </span> shoes
 						</h1>
-						<div className="lg:max-w-md mt-4 text-slate-gray">
+						<div
+							data-aos="fade-up"
+							data-aos-duration="1400"
+							className="lg:max-w-md mt-4 text-slate-gray">
 							<p>{sp.paragraph1}</p>
 							<p className="mt-5 mb-6">{sp.paragraph2}</p>
 						</div>
@@ -20,8 +26,8 @@ const SuperQuality = () => {
 					</div>
 				))}
 			</div>
-			<div className='mt-10'>
-				<img src={shoe8} alt="" />
+			<div className="mt-10">
+				<img data-aos="zoom-in-down" src={shoe8} alt="" />
 			</div>
 		</div>
 	);

@@ -24,7 +24,9 @@ const Navbar = () => {
 				sticky && 'bg-white transition-all shadow-lg duration-300'
 			} transition-all duration-300 fixed w-full top-0 z-10`}>
 			<nav className="flex justify-between py-4 items-center">
-				<div className="cursor-pointer  max-[380px]:w-[90px] max-[420px]:w-[100px]">
+				<div
+					data-aos="zoom-in"
+					className="cursor-pointer  max-[380px]:w-[90px] max-[420px]:w-[100px]">
 					<img src={headerLogo} alt="" />
 				</div>
 
@@ -37,7 +39,7 @@ const Navbar = () => {
 					} `}>
 					{/* navlinks imported from constant/index.js  */}
 					{navLinks.map((nav, index) => (
-						<ul key={index}>
+						<ul data-aos="fade-up" key={index}>
 							<li className="leading-normal text-lg max-[420px]:text-sm hover:text-slate-gray/60 text-slate-gray">
 								<a href={nav.href}>{nav.label}</a>
 							</li>
