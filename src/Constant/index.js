@@ -1,5 +1,5 @@
 
-import { bigShoe1, bigShoe2, bigShoe3, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3, customer1, customer2 } from "../../public/assets/images";
+import { bigShoe1, bigShoe2, bigShoe3, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3, customer1, customer2, customer3, customer4, customer5 } from "../../public/assets/images";
 import { star, truckFast, shieldTick, support, facebook, twitter, instagram } from "../../public/assets/icons";
 
 export const navLinks = [
@@ -10,9 +10,9 @@ export const navLinks = [
 ];
 
 export const statistics = [
-    { value: '1k+', label: 'Brands' },
-    { value: '500+', label: 'Shops' },
-    { value: '250k+', label: 'Customers' },
+    { value: 50, label: 'Brands' },
+    { value: 500, label: 'Shops' },
+    { value: 250, label: 'Customers' },
 ];
 
 export const HomeText = [
@@ -67,6 +67,34 @@ export const products = [
         starIcon: star,
         rating: 4.6
     },
+    {
+        imgURL: shoe4,
+        name: "Nike Air Jordan-001",
+        price: "$200.20",
+        starIcon: star,
+        rating: 4.9
+    },
+    {
+        imgURL: shoe5,
+        name: "Nike Air Jordan-010",
+        price: "$210.20",
+        starIcon: star,
+        rating: 4.3
+    },
+    {
+        imgURL: shoe6,
+        name: "Nike Air Jordan-100",
+        price: "$220.20",
+        starIcon: star,
+        rating: 4.8
+    },
+    {
+        imgURL: shoe7,
+        name: "Nike Air Jordan-030",
+        price: "$230.20",
+        starIcon: star,
+        rating: 4.6
+    },
 ]
 
 export const SuperQualities = [
@@ -93,6 +121,21 @@ export const servicesItm = [
         label: "Love to help you",
         subtext: "Our dedicated team is here to assist you every step of the way."
     },
+    {
+        imgURL: truckFast,
+        label: "Free shipping",
+        subtext: "Enjoy seamless shopping with our complimentary shipping service."
+    },
+    {
+        imgURL: support,
+        label: "Love to help you",
+        subtext: "Our dedicated team is here to assist you every step of the way."
+    },
+    {
+        imgURL: shieldTick,
+        label: "Secure Payment",
+        subtext: "Experience worry-free transactions with our secure payment options."
+    },
 ];
 
 export const Offers = [
@@ -108,7 +151,7 @@ export const reviews = [
     {
         imgURL: customer1,
         customerName: 'Morich Brown',
-        rating: 4.6,
+        rating: 4.7,
         Rstart: star,
         feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
     },
@@ -118,7 +161,28 @@ export const reviews = [
         rating: 4.8,
         Rstart: star,
         feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
-    }
+    },
+    {
+        imgURL: customer3,
+        customerName: 'William Cor',
+        rating: 4.6,
+        Rstart: star,
+        feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
+    },
+    {
+        imgURL: customer4,
+        customerName: 'Gabby paul',
+        rating: 4.7,
+        Rstart: star,
+        feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
+    },
+    {
+        imgURL: customer5,
+        customerName: 'Will Smith',
+        rating: 4.9,
+        Rstart: star,
+        feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
+    },
 ];
 
 
@@ -158,3 +222,41 @@ export const socialMedia = [
     { src: twitter, alt: "twitter logo" },
     { src: instagram, alt: "instagram logo" },
 ];
+
+export const Settings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: 'linear',
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    responsive: [
+        {
+            breakpoint: 10000,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+            },
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                initialSlide: 2,
+            },
+        },
+        {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+};

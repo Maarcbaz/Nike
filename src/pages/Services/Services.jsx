@@ -1,16 +1,15 @@
 import React from 'react';
-import { servicesItm } from '../../Constant';
+import { servicesItm, Settings } from '../../Constant';
 import { ServicesCard } from '../../components';
+import Slider from 'react-slick';
 
 const Services = () => {
 	return (
-		<div
-			id="about-us"
-			className="flex flex-wrap my-24 max-md:gap-16 justify-between padding-x">
+		<Slider {...Settings}>
 			{servicesItm.map((ser, index) => (
 				<ServicesCard ser={ser} key={index} />
 			))}
-		</div>
+		</Slider>
 	);
 };
 
