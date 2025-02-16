@@ -18,8 +18,7 @@ export const useStickyState = () => {
 };
 
 const UseContext = ({ children }) => {
-	const [hamburgerActive, setHamburgerActive] = useState(true);
-
+	const [hamburgerActive, setHamburgerActive] = useState(true);	
 	const [sticky, setSticky] = useState(false);
 	useEffect(() => {
 		window.addEventListener('scroll', () => {

@@ -23,7 +23,7 @@ const Navbar = () => {
 			className={`padding-x z-50 ${
 				sticky && 'bg-white transition-all shadow-lg duration-300'
 			} transition-all duration-300 fixed w-full top-0 z-10`}>
-			<nav className="flex justify-between py-4 items-center">
+			<nav className="flex max-container justify-between py-4 items-center">
 				<div
 					data-aos="zoom-in"
 					className="cursor-pointer  max-[380px]:w-[90px] max-[420px]:w-[100px]">

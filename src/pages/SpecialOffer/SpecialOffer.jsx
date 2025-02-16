@@ -6,7 +6,7 @@ import { arrowRight } from '../../../public/assets/icons';
 
 const SpecialOffer = () => {
 	return (
-		<section className="padding-x max-lg:flex-col-reverse mt-24 max-lg:gap-12 flex justify-between items-center">
+		<section className="padding-x max-container max-lg:flex-col-reverse mt-24 max-lg:gap-12 flex justify-between items-center">
 			<div className="flex-1">
 				<img data-aos="zoom-in" src={offer} alt="" />
 			</div>
