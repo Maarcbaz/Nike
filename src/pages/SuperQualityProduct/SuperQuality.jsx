@@ -4,7 +4,7 @@ import { Button } from '../../components';
 import { shoe8 } from '../../../public/assets/images';
 const SuperQuality = () => {
 	return (
-		<div className="mt-16 mb-10 padding-x items-center justify-between max-lg:flex-col flex">
+		<div className="mt-16 max-container mb-10 padding-x items-center justify-between max-lg:flex-col flex">
 			<div>
 				{SuperQualities.map((sp, index) => (
 					<div key={index}>

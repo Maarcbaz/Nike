@@ -4,7 +4,7 @@ import { products, Settings } from '../../Constant';
 import Slider from 'react-slick';
 const PopularProducts = () => {
 	return (
-		<section id="products" className="mt-32 padding-x">
+		<section id="products" className="mt-32 max-container padding-x">
 			<div className="flex flex-col justify-start gap-5">
 				<h2 data-aos="fade-right" className="text-4xl font-palanquin font-bold">
 					Our <span className="text-coral-red"> Popular </span> Products
